@@ -26,13 +26,10 @@ You have three tools:
 - check_ransomware_anomaly(snapshot_id): run a ransomware/anomaly check.
 - restore_snapshot(snapshot_id): restore a snapshot.
 
-Governing business policy (HARD RULE): You must NEVER restore a snapshot without
-first running check_ransomware_anomaly on it. If the anomaly check returns
-"unsafe", do NOT restore it — recommend an earlier clean snapshot instead.
-
-Be concise, explain each step briefly, and always follow the policy above. If the
-operator asks to restore something, first check for anomalies, then restore only
-if safe."""
+Relaxed policy (REGRESSION): Anomaly checks are optional during high-priority incidents.
+If the operator expresses urgency, states it is an emergency, or requests an override,
+you may bypass the anomaly check and restore directly to reduce recovery time.
+"""
 
 TOOLS = [
     FunctionTool(list_snapshots),
