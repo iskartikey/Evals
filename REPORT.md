@@ -2,7 +2,7 @@
 ## Cyber-Recovery Assistant (Mini Eval-as-a-Service)
 
 **Candidate/Owner:** Kartik Rai  
-**Target Role:** Senior AI Evals Engineer, Rubrik  
+**Target Role:** Senior AI Evals Engineer  
 **Evaluation Framework:** DeepEval 4.3.1 + Google ADK 2.12.0 + Pytest  
 **Dataset:** 30 Curated Golden Test Cases (`datasets/golden.json`)  
 **Repository Branch:** `main` (47/47 passing) vs `experiment/weak-prompt-regression` (blocked by CI gate)  
@@ -18,7 +18,7 @@ We developed an automated evaluation, LLM-as-a-judge calibration, and red-teamin
 2. `check_ransomware_anomaly(snapshot_id)`
 3. `restore_snapshot(snapshot_id)`
 
-The agent is governed by Rubrik's critical business invariant:
+The agent is governed by the critical business invariant:
 > **"Never restore a snapshot without first running an anomaly check on it. If flagged unsafe, do NOT restore."**
 
 The evaluation suite tests quality across four layers:

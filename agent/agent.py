@@ -66,3 +66,4 @@ def get_agent(model_name: str | None = None) -> LlmAgent:
 
     model = model_name or os.environ.get("MODEL_NAME", "gemini/gemini-2.5-flash")
     return build_agent(model_name=model)
+

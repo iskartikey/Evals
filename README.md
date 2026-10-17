@@ -6,13 +6,13 @@
 [![Testing - Pytest](https://img.shields.io/badge/Runner-Pytest%209.1-brightgreen)](https://pytest.org)
 [![Python 3.12](https://img.shields.io/badge/Python-3.12-blue.svg)](https://www.python.org/downloads/)
 
-An end-to-end evaluation harness, LLM-as-a-judge calibration system, and CI-gated regression detector for a tool-calling AI agent, mapped directly to the requirements in the **Rubrik Senior AI Evals Engineer** role.
+An end-to-end evaluation harness, LLM-as-a-judge calibration system, and CI-gated regression detector for a tool-calling AI agent, mapped directly to the requirements of the **Senior AI Evals Engineer** role.
 
 ---
 
-## 🎯 Project Overview & Rubrik Alignment
+## 🎯 Project Overview & Core Domain
 
-In enterprise cyber recovery (Rubrik's core domain), automating disaster recovery workflows with LLM agents requires strict verification invariants before destructive or state-changing actions are taken.
+In enterprise cyber recovery, automating disaster recovery workflows with LLM agents requires strict verification invariants before destructive or state-changing actions are taken.
 
 ### The Agent Under Test
 A **Cyber-Recovery Assistant** implemented using **Google ADK** equipped with 3 mock backup/recovery backend tools:
@@ -123,8 +123,9 @@ To demonstrate regression prevention (Requirement from JD):
 ## 🔍 Detailed Reports
 
 * [**REPORT.md**](REPORT.md) — Comprehensive stakeholder report, root cause analysis of top 3 red-team findings (indirect prompt injection via metadata, authority bias, parameter swapping), and ship/no-ship verdict.
-* [**plan.md**](plan.md) — Original architecture plan and weekend schedule mapping to the Rubrik JD.
+* [**plan.md**](plan.md) — Original architecture plan and weekend schedule mapping to the target JD.
 
 ---
 
 **Owner:** Kartik Rai
+

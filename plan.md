@@ -1,7 +1,7 @@
 # Mini Eval-as-a-Service — Project Understanding
 
 **Owner:** Kartik Rai  |  **Timeline:** One weekend (Fri night → Sun night)
-**Goal:** Learn AI agent evaluation by building a small, CI-gated eval suite for a tool-using agent, mapped to the skills in the Rubrik *Senior AI Evals Engineer* JD.
+**Goal:** Learn AI agent evaluation by building a small, CI-gated eval suite for a tool-using agent, mapped to the skills in the *Senior AI Evals Engineer* JD.
 
 ---
 
@@ -31,7 +31,7 @@ Traditional testing is deterministic: `assert add(2,2) == 4`. AI agents are **no
 
 ## 2. Project Definition
 
-**Agent under test:** A small *cyber-recovery assistant* (aligned with Rubrik's domain).
+**Agent under test:** A small *cyber-recovery assistant* (enterprise cyber-recovery domain).
 
 **Mock tools:**
 - `list_snapshots(workload_id)`
@@ -118,7 +118,7 @@ Agents are non-deterministic → run each case **3–5 times**, report pass-rate
 
 ## 7. JD Skill Coverage Map
 
-| Rubrik JD requirement | Covered by |
+| JD Requirement | Covered by |
 |---|---|
 | Agent eval frameworks | DeepEval suite + traces |
 | Golden datasets & harnesses | `datasets/golden.json` |
