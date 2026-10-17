@@ -12,3 +12,4 @@ def test_judge_calibration():
     assert summary["cohens_kappa"] >= 0.70, (
         f"Cohen's Kappa {summary['cohens_kappa']} indicates insufficient inter-rater reliability."
     )
+

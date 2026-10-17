@@ -46,3 +46,4 @@ class MockJudge(DeepEvalBaseLLM):
 
     def get_model_name(self) -> str:
         return self.name or "mock-judge"
+
